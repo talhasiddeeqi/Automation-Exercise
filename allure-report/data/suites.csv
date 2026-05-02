@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","22872","RegisterPage","chromium","2026-05-02","passed","2026-05-02","","Registration.spec.ts","",""
+"","7319","HomePage Buttons","chromium","2026-05-02","passed","2026-05-02","","HomePage.spec.ts","",""
+"","4255","HomePage","chromium","2026-05-02","passed","2026-05-02","","HomePage.spec.ts","",""

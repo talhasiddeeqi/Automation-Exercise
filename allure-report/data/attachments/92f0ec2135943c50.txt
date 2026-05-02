@@ -1,0 +1,7 @@
+Register page is displayed
+New User Signup! is visible
+Enter Account Information is visible
+Account Created! is visible
+Logged in as Amira is visible
+Account Deleted! is visible
+Signup / Login is visible
