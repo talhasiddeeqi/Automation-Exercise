@@ -34,6 +34,16 @@ test('LoginPage',async({page})=>{
     expect(page.textContent("h2:has-text('Account Deleted!')")).toBeTruthy();
     console.log("Account Deleted! is visible");
 
-    
 
+
+});
+
+
+test.only('LoginPage with invalid credentials',async({page})=>{
+    await expect(page.locator("h2:has-text('Login to your account')")).toBeVisible();
+    console.log("Login to your account is visible");
+    await loginPage.LoginUser(testConfig.invalidEmail, testConfig.invalidPassword);
+    await loginPage.SubmitLogin();
+    expect(page.textContent("p:has-text('Your email or password is incorrect!')")).toBeTruthy();
+    console.log("Your email or password is incorrect! is visible");
 });
