@@ -2,6 +2,7 @@ import { Page, expect, Locator } from '@playwright/test';
 
 export class HomePage {
     readonly page: Page;
+    readonly loginOrSignupButton: Locator;
     
     // Locators
 
@@ -9,6 +10,7 @@ export class HomePage {
 
     constructor(page: Page) {
         this.page = page;
+        this.loginOrSignupButton = page.getByText('Signup / Login');
         
         // Initialize locators
 
