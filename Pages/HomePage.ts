@@ -2,6 +2,9 @@ import { Page, expect, Locator } from '@playwright/test';
 
 export class HomePage {
     readonly page: Page;
+    readonly homebtn: Locator;
+    readonly productsBtn: Locator;
+    readonly cartBtn: Locator;
     readonly loginOrSignupButton: Locator;
     
     // Locators
@@ -10,6 +13,9 @@ export class HomePage {
 
     constructor(page: Page) {
         this.page = page;
+        this.homebtn = page.locator('a:has-text("Home")');
+        this.productsBtn = page.locator('a:has-text("Products")');
+        this.cartBtn = page.locator('a:has-text("Cart")');
         this.loginOrSignupButton = page.getByText('Signup / Login');
         
         // Initialize locators
