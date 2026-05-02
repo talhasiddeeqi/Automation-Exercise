@@ -1,5 +1,20 @@
 import { faker } from '@faker-js/faker';
 
+export class DataHelper {
+  private static allowedCountries = [
+    'India',
+    'United States',
+    'Australia',
+    'Israel',
+    'New Zealand',
+    'Singapore',
+  ];
+
+  static getRandomCountry(): string {
+    return faker.helpers.arrayElement(this.allowedCountries);
+  }
+}
+
 export class RandomDataUtil{
 
 static getFirstName()
@@ -49,7 +64,7 @@ static getPhoneNumber()
 
  
   static getRandomCountry(): string {
-    return faker.location.country();
+    return DataHelper.getRandomCountry();
   }
 
   
@@ -84,6 +99,26 @@ static getPhoneNumber()
 
   static getRandomUUID(): string {
     return faker.string.uuid();
+  }
+
+    static getRandomDay(): string {
+    return faker.number.int({ min: 1, max: 28 }).toString();
+  }
+
+    static getRandomMonth(): string {
+    return faker.date.month();
+  }
+
+    static getRandomYear(length: number = 4): string {
+    return faker.number.int({ min: 1990, max: 2023 }).toString();
+  }
+
+    static getCompanyName(): string {
+    return faker.company.name();
+  }
+
+    static getZipCode(): string {
+    return faker.location.zipCode();
   }
 
 
