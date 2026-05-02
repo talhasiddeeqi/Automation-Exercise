@@ -12,7 +12,11 @@ let testConfig: TestConfig;
 let registerPage: RegisterPage;
 let loginPage: LoginPage;
 let logoutPage: LogoutPage;
-let randomData: RandomDataUtil;
+
+
+    let name = RandomDataUtil.getFirstName();
+    let email = RandomDataUtil.getEmail();
+    let password = RandomDataUtil.getPassword();
 
 test.beforeEach(async ({ page }) => {
     homePage = new HomePage(page);
@@ -23,15 +27,13 @@ test.beforeEach(async ({ page }) => {
     await page.goto(testConfig.appUrl);
 });
 test.afterEach(async ({ page }) => {
-    await logoutPage.logout();
+    //await logoutPage.logout();
     await page.close();
 });
 
 test('RegisterPage',async({page})=>{
 
-    let name = RandomDataUtil.getFirstName();
-    let email = RandomDataUtil.getEmail();
-    let password = RandomDataUtil.getPassword();
+
 
 await registerPage.LoginorSignup();
 expect(await registerPage.isRegisterPageExists()).toBeTruthy();
@@ -58,7 +60,7 @@ console.log("Registered user: " + name + " with email: " + email + " and passwor
 await registerPage.ContinueAfterRegistration();
 expect(page.textContent("a:has-text('Logged in as " + name + "')")).toBeTruthy();
 console.log("Logged in as " + name + " is visible");
-
+/*
 await registerPage.DeleteAccount();
 expect(page.textContent("h2:has-text('Account Deleted!')")).toBeTruthy();
 console.log("Account Deleted! is visible");
@@ -67,6 +69,23 @@ console.log("Account Deleted! is visible");
 await registerPage.ContinueAfterDeletion();
 expect(page.textContent("a:has-text('Signup / Login')")).toBeTruthy();
 console.log("Signup / Login is visible");
-
+*/
 }
+
+
 );  
+
+
+test('RegisterPage with existing email',async({page})=>{
+
+await registerPage.LoginorSignup();
+expect(await registerPage.isRegisterPageExists()).toBeTruthy();
+expect(page.textContent("h2:has-text('New User Signup!')")).toBeTruthy();
+console.log("New User Signup! is visible");
+await registerPage.RegisterUser(name,email);
+expect(page.textContent("p:has-text('Email Address already exist!')")).toBeTruthy();
+console.log("Email Address already exist! is visible");
+
+
+
+});

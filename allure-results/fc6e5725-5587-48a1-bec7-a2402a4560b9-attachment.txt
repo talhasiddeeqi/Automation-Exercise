@@ -1,0 +1,6 @@
+Register page is displayed
+New User Signup! is visible
+Enter Account Information is visible
+Account Created! is visible
+Registered user: Omer with email: Karla33@yahoo.com and password: F1Twfx7FpmgKxOD
+Logged in as Omer is visible
