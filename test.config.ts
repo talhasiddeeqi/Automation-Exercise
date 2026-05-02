@@ -1,12 +1,12 @@
 export class TestConfig{ 
     
-    appUrl="https://opensource-demo.orangehrmlive.com/web/auth/login" 
+    appUrl="https://automationexercise.com/" 
        
     //valid login credentials- create your own login account 
-    username="Admin" 
+    email="taz725@yahoo.com" 
     password="admin123" 
  
     //valid login credentials- create your own login account 
-    invalidUsername="Admin123" 
+    invalidEmail="invalid@yahoo.com" 
     invalidPassword="admin1234"
 }
