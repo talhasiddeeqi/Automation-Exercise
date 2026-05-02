@@ -30,16 +30,16 @@ expect(page.textContent("h2:has-text('Enter Account Information')")).toBeTruthy(
 console.log("Enter Account Information is visible");
 
 await registerPage.FillAccountInformation(RandomDataUtil.getPassword(), RandomDataUtil.getRandomDay(), RandomDataUtil.getRandomMonth(), RandomDataUtil.getRandomYear(), true, true);  
-await page.waitForTimeout(5000);
+//await page.waitForTimeout(5000);
 
 await registerPage.FillAddressInformation(RandomDataUtil.getFirstName(), RandomDataUtil.getlastName(), RandomDataUtil.getCompanyName(), RandomDataUtil.getRandomAddress(), RandomDataUtil.getRandomAddress(), RandomDataUtil.getRandomCountry(), RandomDataUtil.getRandomState(), RandomDataUtil.getRandomCity(), RandomDataUtil.getZipCode(), RandomDataUtil.getPhoneNumber());
-await page.waitForTimeout(5000);
+//await page.waitForTimeout(5000);
 
 await registerPage.SubmitRegistration();
 expect(page.textContent("h2:has-text('Account Created!')")).toBeTruthy();
 console.log("Account Created! is visible");
 
-await page.waitForTimeout(5000);
+//await page.waitForTimeout(5000);
 
 
 await registerPage.ContinueAfterRegistration();
