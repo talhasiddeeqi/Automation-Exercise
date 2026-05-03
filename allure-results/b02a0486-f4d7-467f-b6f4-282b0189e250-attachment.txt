@@ -1,0 +1,3 @@
+Navigated to home page successfully
+Products page is displayed
+Navigated to first product details page successfully

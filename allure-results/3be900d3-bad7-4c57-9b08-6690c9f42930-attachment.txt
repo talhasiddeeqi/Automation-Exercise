@@ -1,0 +1,5 @@
+Navigated to home page successfully
+Products page is displayed
+Product added to cart successfully
+Cart page is displayed
+Navigated to cart page successfully

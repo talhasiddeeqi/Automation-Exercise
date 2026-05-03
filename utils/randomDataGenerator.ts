@@ -10,8 +10,18 @@ export class DataHelper {
     'Singapore',
   ];
 
+    private static allowedColors = [
+    'Red',
+    'Blue',
+    'Green',
+  ];
+
   static getRandomCountry(): string {
     return faker.helpers.arrayElement(this.allowedCountries);
+  }
+
+  static getRandomColor(): string {
+    return faker.helpers.arrayElement(this.allowedColors);
   }
 }
 
@@ -67,7 +77,10 @@ static getPhoneNumber()
     return DataHelper.getRandomCountry();
   }
 
-  
+  static getRandomColor(): string {
+    return DataHelper.getRandomColor();
+  }
+
     static getRandomState(): string {
     return faker.location.state();
   }
@@ -119,6 +132,11 @@ static getPhoneNumber()
 
     static getZipCode(): string {
     return faker.location.zipCode();
+  }
+
+
+      static getRandomQuantity(): string {
+    return faker.number.int({ min: 1, max: 50 }).toString();
   }
 
 

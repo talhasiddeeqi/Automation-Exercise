@@ -1,0 +1,194 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Cart.spec.ts >> Cart Page
+- Location: tests\Cart.spec.ts:32:5
+
+# Error details
+
+```
+TypeError: cartPage.getCartItems is not a function
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for automation practice" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Signup / Login" [ref=e23] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e24]: 
+            - text: Signup / Login
+        - listitem [ref=e25]:
+          - link " Test Cases" [ref=e26] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e27]: 
+            - text: Test Cases
+        - listitem [ref=e28]:
+          - link " API Testing" [ref=e29] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e30]: 
+            - text: API Testing
+        - listitem [ref=e31]:
+          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e33]: 
+            - text: Video Tutorials
+        - listitem [ref=e34]:
+          - link " Contact us" [ref=e35] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e36]: 
+            - text: Contact us
+  - generic [ref=e38]:
+    - list [ref=e40]:
+      - listitem [ref=e41]:
+        - link "Home" [ref=e42] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e43]: Shopping Cart
+    - generic [ref=e48] [cursor=pointer]: Proceed To Checkout
+    - table [ref=e50]:
+      - rowgroup [ref=e51]:
+        - row "Item Description Price Quantity Total" [ref=e52]:
+          - cell "Item" [ref=e53]
+          - cell "Description" [ref=e54]
+          - cell "Price" [ref=e55]
+          - cell "Quantity" [ref=e56]
+          - cell "Total" [ref=e57]
+          - cell [ref=e58]
+      - rowgroup [ref=e59]:
+        - row "Product Image Blue Top Women > Tops Rs. 500 1 Rs. 500 " [ref=e60]:
+          - cell "Product Image" [ref=e61]:
+            - link "Product Image" [ref=e62] [cursor=pointer]:
+              - /url: ""
+              - img "Product Image" [ref=e63]
+          - cell "Blue Top Women > Tops" [ref=e64]:
+            - heading "Blue Top" [level=4] [ref=e65]:
+              - link "Blue Top" [ref=e66] [cursor=pointer]:
+                - /url: /product_details/1
+            - paragraph [ref=e67]: Women > Tops
+          - cell "Rs. 500" [ref=e68]:
+            - paragraph [ref=e69]: Rs. 500
+          - cell "1" [ref=e70]:
+            - button "1" [ref=e71] [cursor=pointer]
+          - cell "Rs. 500" [ref=e72]:
+            - paragraph [ref=e73]: Rs. 500
+          - cell "" [ref=e74]:
+            - generic [ref=e76] [cursor=pointer]: 
+        - row "Product Image Men Tshirt Men > Tshirts Rs. 400 1 Rs. 400 " [ref=e77]:
+          - cell "Product Image" [ref=e78]:
+            - link "Product Image" [ref=e79] [cursor=pointer]:
+              - /url: ""
+              - img "Product Image" [ref=e80]
+          - cell "Men Tshirt Men > Tshirts" [ref=e81]:
+            - heading "Men Tshirt" [level=4] [ref=e82]:
+              - link "Men Tshirt" [ref=e83] [cursor=pointer]:
+                - /url: /product_details/2
+            - paragraph [ref=e84]: Men > Tshirts
+          - cell "Rs. 400" [ref=e85]:
+            - paragraph [ref=e86]: Rs. 400
+          - cell "1" [ref=e87]:
+            - button "1" [ref=e88] [cursor=pointer]
+          - cell "Rs. 400" [ref=e89]:
+            - paragraph [ref=e90]: Rs. 400
+          - cell "" [ref=e91]:
+            - generic [ref=e93] [cursor=pointer]: 
+  - contentinfo [ref=e94]:
+    - generic [ref=e99]:
+      - heading "Subscription" [level=2] [ref=e100]
+      - generic [ref=e101]:
+        - textbox "Your email address" [ref=e102]
+        - button "" [ref=e103] [cursor=pointer]:
+          - generic [ref=e104]: 
+        - paragraph [ref=e105]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e109]: Copyright © 2021 All rights reserved
+    - insertion [ref=e111]
+  - text: 
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | import { HomePage } from '../Pages/HomePage';
+  3  | import { TestConfig } from '../test.config';
+  4  | import { ContactUsPage } from '../Pages/ContactUsPage';
+  5  | import { TestCasePage } from '../Pages/TestCasePage';
+  6  | import { CartPage } from '../Pages/CartPage';
+  7  | import { ProductPage } from '../Pages/ProductPage';
+  8  | 
+  9  | 
+  10 | let homePage: HomePage;
+  11 | let testConfig: TestConfig;
+  12 | let contactUsPage: ContactUsPage;
+  13 | let testCasePage: TestCasePage;
+  14 | let cartPage: CartPage;
+  15 | let productPage: ProductPage;
+  16 | 
+  17 | 
+  18 | test.beforeEach(async ({ page }) => {
+  19 |     homePage = new HomePage(page);
+  20 |     testConfig = new TestConfig();
+  21 |     contactUsPage = new ContactUsPage(page);
+  22 |     testCasePage = new TestCasePage(page);
+  23 |     cartPage = new CartPage(page);
+  24 |     productPage = new ProductPage(page);
+  25 |     await page.goto(testConfig.appUrl);
+  26 |     expect(page.url()).toBe(testConfig.appUrl);
+  27 |     console.log("Navigated to home page successfully");
+  28 |     
+  29 |  
+  30 | });
+  31 | 
+  32 | test('Cart Page',async({page})=>{
+  33 |     await homePage.productsBtn.click();
+  34 |     expect(await productPage.isProductPageExists()).toBeTruthy();
+  35 |     await productPage.addProductToCart();
+  36 |     console.log("Product added to cart successfully");
+  37 | 
+  38 | 
+  39 | 
+  40 |     await homePage.cartBtn.click();
+  41 |     expect(page.url()).toContain("/view_cart");
+  42 |     expect(await cartPage.isCartPageExists()).toBeTruthy();
+  43 |     console.log("Navigated to cart page successfully");
+> 44 |     let cartItems = await cartPage.getCartItems();
+     |                                    ^ TypeError: cartPage.getCartItems is not a function
+  45 |     if(cartItems.length > 0){
+  46 |         console.log("Cart has items and they are displayed below");
+  47 |         for(let i=0;i<cartItems.length;i++){
+  48 |             console.log(await cartItems[i].textContent());
+  49 |         }
+  50 |     }else{
+  51 |         console.log("Cart is empty");
+  52 |     }
+  53 |     
+  54 | });
+```

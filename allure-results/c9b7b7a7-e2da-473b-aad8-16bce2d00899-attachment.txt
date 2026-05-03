@@ -1,0 +1,77 @@
+Navigated to home page successfully
+Products page is displayed
+Product added to cart successfully
+Cart page is displayed
+Navigated to cart page successfully
+Cart has items and they are displayed below
+
+			
+				
+					
+						
+							Item
+							Description
+							Price
+							Quantity
+							Total
+							
+						
+					
+					
+
+						
+						
+							
+								
+							
+							
+								Blue Top
+								Women > Tops
+							
+							
+								Rs. 500
+							
+							
+								1
+							
+							
+								Rs. 500
+							
+							
+								
+							
+						
+						
+						
+							
+								
+							
+							
+								Men Tshirt
+								Men > Tshirts
+							
+							
+								Rs. 400
+							
+							
+								1
+							
+							
+								Rs. 400
+							
+							
+								
+							
+						
+						
+					
+				
+
+			
+
+				
+					
+					Cart is empty! Click here to buy products.
+					
+				
+			

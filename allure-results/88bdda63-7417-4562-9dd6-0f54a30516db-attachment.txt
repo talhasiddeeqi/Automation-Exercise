@@ -1,0 +1,4 @@
+Contact Us page is displayed
+Contact Us is visible
+Success! Your details have been submitted successfully. is visible
+Navigated back to home page successfully
