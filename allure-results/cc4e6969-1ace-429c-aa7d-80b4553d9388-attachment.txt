@@ -1,0 +1,6 @@
+Register page is displayed
+New User Signup! is visible
+Enter Account Information is visible
+Account Created! is visible
+Registered user: Durward with email: Ollie17@yahoo.com and password: HnyLVRzqMqJdwGL
+Logged in as Durward is visible
