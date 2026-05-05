@@ -19,12 +19,12 @@ test.beforeEach(async ({ page }) => {
     await page.goto(testConfig.appUrl);
     expect(page.url()).toBe(testConfig.appUrl);
     console.log("Navigated to home page successfully");
-    await homePage.testcasesBtn.click();
+    
  
 });
 
 test('TestCase Page',async({page})=>{
-
+    await homePage.testcasesBtn.click();
     expect(await testCasePage.isTestCasePageExists()).toBeTruthy();
     
 });

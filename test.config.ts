@@ -5,9 +5,9 @@ export class TestConfig{
     //valid login credentials- create your own login account 
     email="taz725@yahoo.com" 
     password="admin123" 
-    name="Mughees"
+    name="TAZ725"
  
     //valid login credentials- create your own login account 
     invalidEmail="invalid@yahoo.com" 
-    invalidPassword="admin1234"
+    invalidPassword="Talha12345"
 }
