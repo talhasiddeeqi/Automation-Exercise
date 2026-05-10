@@ -1,0 +1,114 @@
+Navigated to home page successfully
+Products page is displayed
+Product added to cart successfully
+Cart page is displayed
+Navigated to cart page successfully
+Warning to register first is shown
+Enter Account Information is visible
+Account Created! is visible
+Registered user: Nova with email: Cody_Ritchie@hotmail.com and password: PgqPgfMKYAhy5nB
+Logged in as Nova is visible
+Cart page is displayed
+Navigated to cart page successfully
+Checkout page is displayed
+Navigated to checkout page successfully
+Cart has items and they are displayed below
+
+				
+					
+						
+							Item
+							Description
+							Price
+							Quantity
+							Total
+							
+						
+					
+					
+						
+						
+							
+								
+							
+							
+								Blue Top
+								Women > Tops
+							
+							
+								Rs. 500
+							
+							
+								1
+							
+							
+								Rs. 500
+							
+						
+						
+						
+							
+								
+							
+							
+								Men Tshirt
+								Men > Tshirts
+							
+							
+								Rs. 400
+							
+							
+								1
+							
+							
+								Rs. 400
+							
+						
+						
+
+						
+							
+							
+							
+								Total Amount
+							
+							
+								Rs. 900
+							
+						
+
+					
+				
+			
+Delivery address information is displayed below
+
+						
+							Your delivery address
+							. Kate Walker
+							Bosco Inc
+							8972 Eleanora Throughway
+							6048 Mante Rue
+							Missouri City Massachusetts
+								24385
+							India
+							(432) 276-7689 x40632
+						
+					
+Billing address information is displayed below
+
+						
+							Your billing address
+							. Kate Walker
+							Bosco Inc
+							8972 Eleanora Throughway
+							6048 Mante Rue
+							Missouri City Massachusetts
+								24385
+							India
+							(432) 276-7689 x40632
+						
+					
+Navigated to payment page successfully
+Order placed successfully and confirmation message is visible
+Account Deleted! is visible
+Signup / Login is visible

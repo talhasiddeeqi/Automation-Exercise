@@ -1,0 +1,114 @@
+Navigated to home page successfully
+Products page is displayed
+Product added to cart successfully
+Cart page is displayed
+Navigated to cart page successfully
+Warning to register first is shown
+Enter Account Information is visible
+Account Created! is visible
+Registered user: Lindsey with email: Adam.Harvey58@yahoo.com and password: Pjf1rykekunvdGf
+Logged in as Lindsey is visible
+Cart page is displayed
+Navigated to cart page successfully
+Checkout page is displayed
+Navigated to checkout page successfully
+Cart has items and they are displayed below
+
+				
+					
+						
+							Item
+							Description
+							Price
+							Quantity
+							Total
+							
+						
+					
+					
+						
+						
+							
+								
+							
+							
+								Blue Top
+								Women > Tops
+							
+							
+								Rs. 500
+							
+							
+								1
+							
+							
+								Rs. 500
+							
+						
+						
+						
+							
+								
+							
+							
+								Men Tshirt
+								Men > Tshirts
+							
+							
+								Rs. 400
+							
+							
+								1
+							
+							
+								Rs. 400
+							
+						
+						
+
+						
+							
+							
+							
+								Total Amount
+							
+							
+								Rs. 900
+							
+						
+
+					
+				
+			
+Delivery address information is displayed below
+
+						
+							Your delivery address
+							. Stephania Muller
+							Davis and Sons
+							14919 Morar Fork
+							645 Woodside Road
+							El Paso Alaska
+								54626-3415
+							New Zealand
+							380-840-8819 x92744
+						
+					
+Billing address information is displayed below
+
+						
+							Your billing address
+							. Stephania Muller
+							Davis and Sons
+							14919 Morar Fork
+							645 Woodside Road
+							El Paso Alaska
+								54626-3415
+							New Zealand
+							380-840-8819 x92744
+						
+					
+Navigated to payment page successfully
+Order placed successfully and confirmation message is visible
+Account Deleted! is visible
+Signup / Login is visible

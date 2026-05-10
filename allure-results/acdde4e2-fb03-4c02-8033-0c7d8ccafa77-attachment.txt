@@ -1,0 +1,114 @@
+Navigated to home page successfully
+Products page is displayed
+Product added to cart successfully
+Cart page is displayed
+Navigated to cart page successfully
+Warning to register first is shown
+Enter Account Information is visible
+Account Created! is visible
+Registered user: Luke with email: Maryann.Kassulke@yahoo.com and password: DIguOVnVE6ERzQb
+Logged in as Luke is visible
+Cart page is displayed
+Navigated to cart page successfully
+Checkout page is displayed
+Navigated to checkout page successfully
+Cart has items and they are displayed below
+
+				
+					
+						
+							Item
+							Description
+							Price
+							Quantity
+							Total
+							
+						
+					
+					
+						
+						
+							
+								
+							
+							
+								Blue Top
+								Women > Tops
+							
+							
+								Rs. 500
+							
+							
+								1
+							
+							
+								Rs. 500
+							
+						
+						
+						
+							
+								
+							
+							
+								Men Tshirt
+								Men > Tshirts
+							
+							
+								Rs. 400
+							
+							
+								1
+							
+							
+								Rs. 400
+							
+						
+						
+
+						
+							
+							
+							
+								Total Amount
+							
+							
+								Rs. 900
+							
+						
+
+					
+				
+			
+Delivery address information is displayed below
+
+						
+							Your delivery address
+							. Caleb Auer
+							Lemke Inc
+							800 Rubie Locks
+							839 Miriam Greens
+							Aliso Viejo North Dakota
+								75637-5434
+							New Zealand
+							373-865-5870 x61099
+						
+					
+Billing address information is displayed below
+
+						
+							Your billing address
+							. Caleb Auer
+							Lemke Inc
+							800 Rubie Locks
+							839 Miriam Greens
+							Aliso Viejo North Dakota
+								75637-5434
+							New Zealand
+							373-865-5870 x61099
+						
+					
+Navigated to payment page successfully
+Order placed successfully and confirmation message is visible
+Account Deleted! is visible
+Signup / Login is visible

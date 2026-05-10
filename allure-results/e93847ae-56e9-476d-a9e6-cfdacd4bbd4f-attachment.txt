@@ -1,0 +1,10 @@
+Navigated to home page successfully
+Products page is displayed
+Product added to cart successfully
+Cart page is displayed
+Navigated to cart page successfully
+Warning to register first is shown
+Enter Account Information is visible
+Account Created! is visible
+Registered user: Clair with email: Ethel_Quigley@gmail.com and password: dfuXQtsw4pyWome
+Logged in as Clair is visible

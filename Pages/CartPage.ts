@@ -6,6 +6,7 @@ export class CartPage {
     readonly cartItems: Locator;
     readonly productQuantity: Locator;
     readonly proceedToCheckoutBtn: Locator;
+    readonly continueoncartBtn: Locator;
 
 
     
@@ -19,6 +20,7 @@ export class CartPage {
         this.cartItems = page.locator('#cart_info');
         this.productQuantity = page.locator(".disabled");
         this.proceedToCheckoutBtn = page.getByText('Proceed To Checkout');
+        this.continueoncartBtn = page.getByText('Continue On Cart', { exact: true });
 
 
 

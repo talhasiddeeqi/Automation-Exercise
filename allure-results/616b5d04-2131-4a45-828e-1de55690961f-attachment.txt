@@ -1,0 +1,110 @@
+Navigated to home page successfully
+Products page is displayed
+Product added to cart successfully
+Cart page is displayed
+Navigated to cart page successfully
+Warning to register first is shown
+Enter Account Information is visible
+Account Created! is visible
+Registered user: Silvia with email: Alicia.McCullough@hotmail.com and password: oPP09NgbYf2kYb0
+Logged in as Silvia is visible
+Cart page is displayed
+Navigated to cart page successfully
+Checkout page is displayed
+Navigated to checkout page successfully
+Cart has items and they are displayed below
+
+				
+					
+						
+							Item
+							Description
+							Price
+							Quantity
+							Total
+							
+						
+					
+					
+						
+						
+							
+								
+							
+							
+								Blue Top
+								Women > Tops
+							
+							
+								Rs. 500
+							
+							
+								1
+							
+							
+								Rs. 500
+							
+						
+						
+						
+							
+								
+							
+							
+								Men Tshirt
+								Men > Tshirts
+							
+							
+								Rs. 400
+							
+							
+								1
+							
+							
+								Rs. 400
+							
+						
+						
+
+						
+							
+							
+							
+								Total Amount
+							
+							
+								Rs. 900
+							
+						
+
+					
+				
+			
+Delivery address information is displayed below
+
+						
+							Your delivery address
+							. Carroll Pfeffer-Schroeder
+							Emmerich - Klocko
+							72804 Powlowski Cape
+							76435 Birch Close
+							New Eunice Ohio
+								57010
+							Israel
+							(555) 656-7751
+						
+					
+Billing address information is displayed below
+
+						
+							Your billing address
+							. Carroll Pfeffer-Schroeder
+							Emmerich - Klocko
+							72804 Powlowski Cape
+							76435 Birch Close
+							New Eunice Ohio
+								57010
+							Israel
+							(555) 656-7751
+						
+					
